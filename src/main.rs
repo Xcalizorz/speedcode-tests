@@ -13,7 +13,6 @@ async fn main() -> color_eyre::Result<()> {
     // NOTE: For selenium 3.x, use "http://localhost:4444/wd/hub/session".
     let driver = WebDriver::new("http://localhost:4444", caps).await?;
 
-    // Navigate to https://wikipedia.org.
     driver
         .goto("https://impressum.speed.codes/Privatperson")
         .await?;
